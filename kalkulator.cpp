@@ -1,9 +1,83 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-	
-	int garis,pertambahan,pilihan;
+pertambahan(){
+		int garis;
+		for(garis=0;garis<=30;garis++){
+			cout<<"=";	
+		}
+			cout<<"\nPERTAMBAHAN\n";
+		for(garis=0;garis<=30;garis++){
+				cout<<"=";	
+		}
+		float huruf1,huruf2,hasil;
+			cout<<"\nMASUKAN NOMOR PERTAMA = "; cin>>huruf1;
+			cout<<"\nMASUKAN NOMOR KEDUA = "; cin>>huruf2;
+			hasil = huruf1+huruf2;
+			cout<<"\nHASILNYA ADALAH = "<<hasil<<"\n";
+}
+pengurangan(){
+		int garis;
+		for(garis=0;garis<=30;garis++){
+			cout<<"=";	
+		}
+			cout<<"\nPENGURANGAN\n";
+		for(garis=0;garis<=30;garis++){
+				cout<<"=";	
+		}
+		float huruf1,huruf2,hasil;
+			cout<<"\nMASUKAN NOMOR PERTAMA = "; cin>>huruf1;
+			cout<<"\nMASUKAN NOMOR KEDUA = "; cin>>huruf2;
+			hasil = huruf1-huruf2;
+			cout<<"\nHASILNYA ADALAH = "<<hasil<<"\n";
+}
+perkalian(){
+		int garis;
+		for(garis=0;garis<=30;garis++){
+			cout<<"=";	
+		}
+			cout<<"\nPERKALIAN\n";
+		for(garis=0;garis<=30;garis++){
+				cout<<"=";	
+		}
+		float huruf1,huruf2,hasil;
+			cout<<"\nMASUKAN NOMOR PERTAMA = "; cin>>huruf1;
+			cout<<"\nMASUKAN NOMOR KEDUA = "; cin>>huruf2;
+			hasil = huruf1*huruf2;
+			cout<<"\nHASILNYA ADALAH = "<<hasil<<"\n";
+}
+pembagian(){
+		int garis;
+		for(garis=0;garis<=30;garis++){
+			cout<<"=";	
+		}
+			cout<<"\nPEMBAGIAN\n";
+		for(garis=0;garis<=30;garis++){
+				cout<<"=";	
+		}
+		float huruf1,huruf2,hasil;
+			cout<<"\nMASUKAN NOMOR PERTAMA = "; cin>>huruf1;
+			cout<<"\nMASUKAN NOMOR KEDUA = "; cin>>huruf2;
+			hasil = huruf1/huruf2;
+			cout<<"\nHASILNYA ADALAH = "<<hasil<<"\n";
+}
+pilih(){
+	int pilihan;
+	cin>>pilihan;
+	system("cls");
+	if (pilihan == 1) {
+		pertambahan();	
+	}else if (pilihan == 2) {
+		pengurangan();
+	}else if (pilihan == 3) {
+		perkalian();	
+	} else if (pilihan == 4) {
+		pembagian();		
+	} else {
+		cout<<"\nPILIHAN TIDAK BENAR";
+	}
+}
+mainmenu (){
+	int garis;
 	for(garis=0;garis<=30;garis++){
 		cout<<"=";	
 	}
@@ -19,62 +93,18 @@ int main() {
 		cout<<"=";	
 	}
 	cout<<"\nPILIH JENIS PERHITUNGAN : ";
-	cin>>pertambahan;
-	pilihan = pertambahan;
+}
+kembali(){
 	system("cls");
-	if (pilihan == 1) {
-			for(garis=0;garis<=30;garis++){
-			cout<<"=";	
-			}
-			cout<<"\nPERTAMBAHAN\n";
-			for(garis=0;garis<=30;garis++){
-				cout<<"=";	
-			}
-			float huruf1,huruf2,hasil;
-			cout<<"\nMASUKAN NOMOR PERTAMA = "; cin>>huruf1;
-			cout<<"\nMASUKAN NOMOR KEDUA = "; cin>>huruf2;
-			hasil = huruf1+huruf2;
-			cout<<"\nHASILNYA ADALAH = "<<hasil;
-	}else if (pilihan == 2) {
-			for(garis=0;garis<=30;garis++){
-			cout<<"=";	
-			}
-			cout<<"\nPENGURANGAN\n";
-			for(garis=0;garis<=30;garis++){
-				cout<<"=";	
-			}
-			float huruf1,huruf2,hasil;
-			cout<<"\nMASUKAN NOMOR PERTAMA = "; cin>>huruf1;
-			cout<<"\nMASUKAN NOMOR KEDUA = "; cin>>huruf2;
-			hasil = huruf1-huruf2;
-			cout<<"\nHASILNYA ADALAH = "<<hasil;
-	}else if (pilihan == 3) {
-			for(garis=0;garis<=30;garis++){
-			cout<<"=";	
-			}
-			cout<<"\nPERKALIAN\n";
-			for(garis=0;garis<=30;garis++){
-				cout<<"=";	
-			}
-			float huruf1,huruf2,hasil;
-			cout<<"\nMASUKAN NOMOR PERTAMA = "; cin>>huruf1;
-			cout<<"\nMASUKAN NOMOR KEDUA = "; cin>>huruf2;
-			hasil = huruf1*huruf2;
-			cout<<"\nHASILNYA ADALAH = "<<hasil;
-	} else if (pilihan == 4) {
-			for(garis=0;garis<=30;garis++){
-			cout<<"=";	
-			}
-			cout<<"\nPEMBAGIAN\n";
-			for(garis=0;garis<=30;garis++){
-				cout<<"=";	
-			}
-			float huruf1,huruf2,hasil;
-			cout<<"\nMASUKAN NOMOR PERTAMA = "; cin>>huruf1;
-			cout<<"\nMASUKAN NOMOR KEDUA = "; cin>>huruf2;
-			hasil = huruf1/huruf2;
-			cout<<"\nHASILNYA ADALAH = "<<hasil;
-	} else {
-		cout<<"\nPILIHAN TIDAK BENAR";
-	}
+	return 1;
+}
+pause(){
+	system("pause");
+}
+
+int main() {
+	mainmenu();
+	pilih();
+	pause();
+	kembali();
 }
