@@ -3,19 +3,21 @@ using namespace std;
 
 int main() {
 	
-	int garis,garis2;
-	int pertambahan,pilihan;
+	int garis,pertambahan,pilihan;
 	for(garis=0;garis<=30;garis++){
 		cout<<"=";	
 	}
 	cout<<"\nKALKULATOR SEDERHANA\n";
-	for(garis2=0;garis2<=30;garis2++){
+	for(garis=0;garis<=30;garis++){
 		cout<<"=";	
 	}
 	cout<<"\n1.PERTAMBAHAN";
 	cout<<"\n2.PENGURANGAN";
 	cout<<"\n3.PERKALIAN";
-	cout<<"\n4.PEMBAGIAN";
+	cout<<"\n4.PEMBAGIAN\n";
+	for(garis=0;garis<=30;garis++){
+		cout<<"=";	
+	}
 	cout<<"\nPILIH JENIS PERHITUNGAN : ";
 	cin>>pertambahan;
 	pilihan = pertambahan;
@@ -25,7 +27,7 @@ int main() {
 			cout<<"=";	
 			}
 			cout<<"\nPERTAMBAHAN\n";
-			for(garis2=0;garis2<=30;garis2++){
+			for(garis=0;garis<=30;garis++){
 				cout<<"=";	
 			}
 			float huruf1,huruf2,hasil;
@@ -38,7 +40,7 @@ int main() {
 			cout<<"=";	
 			}
 			cout<<"\nPENGURANGAN\n";
-			for(garis2=0;garis2<=30;garis2++){
+			for(garis=0;garis<=30;garis++){
 				cout<<"=";	
 			}
 			float huruf1,huruf2,hasil;
@@ -51,7 +53,7 @@ int main() {
 			cout<<"=";	
 			}
 			cout<<"\nPERKALIAN\n";
-			for(garis2=0;garis2<=30;garis2++){
+			for(garis=0;garis<=30;garis++){
 				cout<<"=";	
 			}
 			float huruf1,huruf2,hasil;
@@ -64,7 +66,7 @@ int main() {
 			cout<<"=";	
 			}
 			cout<<"\nPEMBAGIAN\n";
-			for(garis2=0;garis2<=30;garis2++){
+			for(garis=0;garis<=30;garis++){
 				cout<<"=";	
 			}
 			float huruf1,huruf2,hasil;
